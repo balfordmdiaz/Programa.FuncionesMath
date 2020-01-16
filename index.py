@@ -18,37 +18,34 @@ while True:
         print("El segundo valor es incorrecto. Intentalo Nuevamente")
 
 
-####CODIGO A MEJORAR
-"""print("Operaciones; Sumar    |   Restar   |   Multiplicar  |   Dividir")
+
+print("Operaciones: Sumar    |   Restar   |   Multiplicar  |   Dividir")
 
 while True:
     try:
-        op = str(input("Ingresa la operacion a utilizar: "))
-        break
+        op = (str(input("Ingresa la operacion a utilizar: ")))
+        op_=op.lower()
+
+        if op_ == "sumar":
+            print("Resultado = " + str(suma(val1, val2)))
+            break
+
+        elif op_ == "restar":
+            print("Resultado = " + str(resta(val1, val2)))
+            break
+
+        elif op_ == "multiplicar":
+            print("Resultado = " + str(multiplicar(val1, val2)))
+            break
+
+        elif op_ == "dividir":
+            print("Resultado = " + str(dividir(val1, val2)))
+            break
 
     except ValueError:
         print("Has escrito mal la operacion. Intentelo Nuevamente")
 
-op_=op.lower()#######funcion que permite que no importa como se escribe el dato lo haga pasar"""
-
-print("Operaciones; Sumar    |   Restar   |   Multiplicar  |   Dividir")
-op = input("Ingresa la operacion a utilizar: ")
-op_=op.lower()#######funcion que permite que no importa como se escribe el dato lo haga pasar
-
-if op_ == "sumar":
-    print(suma(val1, val2))
-
-elif op_ == "restar":
-    print(resta(val1, val2))
-
-elif op_ == "multiplicar":
-    print(multiplicar(val1, val2))
-
-elif op_ == "dividir":
-    print(dividir(val1, val2))
-
-else:
-    print("No existe la operacion")
 
 print("Operacion Ejecutada. Siga la ejecucion del Programa")
 
+#https://github.com/balfordmdiaz/Programa.FuncionesMath.git
